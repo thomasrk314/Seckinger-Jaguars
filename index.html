@@ -9,28 +9,28 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Jaguars">
-<meta name="theme-color" content="#00A0B0">
+<meta name="theme-color" content="#00A9CE">
 <title>Seckinger Jaguars</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
-html,body{height:100%;background:#101418;font-family:'Barlow',sans-serif;color:white;overflow:hidden;}
-:root{--teal:#00A0B0;--black:#101418;--gray:#7A7F85;--teal-dark:#007A88;--teal-glow:rgba(0,160,176,0.15);}
+html,body{height:100%;background:#101820;font-family:'Barlow',sans-serif;color:white;overflow:hidden;}
+:root{--teal:#00A9CE;--black:#101820;--gray:#8C8279;--teal-dark:#0080A0;--teal-glow:rgba(0,169,206,0.15);}
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;700&display=swap');
 
-.app{display:flex;flex-direction:column;height:100vh;max-width:480px;margin:0 auto;background:#101418;}
+.app{display:flex;flex-direction:column;height:100vh;max-width:480px;margin:0 auto;background:#101820;}
 
 /* HEADER */
-.header{background:linear-gradient(135deg,#0a0d10 0%,#131920 100%);border-bottom:2px solid var(--teal);padding:env(safe-area-inset-top,12px) 16px 12px;position:relative;overflow:hidden;flex-shrink:0;}
+.header{background:linear-gradient(135deg,#080e14 0%,#0e1620 100%);border-bottom:2px solid var(--teal);padding:env(safe-area-inset-top,12px) 16px 12px;position:relative;overflow:hidden;flex-shrink:0;}
 .header-bg{position:absolute;right:-10px;top:-10px;font-family:'Bebas Neue',sans-serif;font-size:90px;color:rgba(255,255,255,0.03);letter-spacing:4px;line-height:1;user-select:none;pointer-events:none;}
 .header-inner{display:flex;align-items:center;gap:12px;position:relative;z-index:2;}
 .logo-circle{width:52px;height:52px;border-radius:50%;background:var(--teal-glow);border:2px solid var(--teal);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}
 .logo-circle img{width:44px;height:44px;object-fit:contain;}
 .header-text h1{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;line-height:1;}
 .header-text .sub{font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--teal);letter-spacing:3px;text-transform:uppercase;margin-top:2px;}
-.season-badge{margin-left:auto;background:var(--teal);color:#101418;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:2px;padding:3px 8px;border-radius:4px;flex-shrink:0;}
+.season-badge{margin-left:auto;background:var(--teal);color:#101820;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:2px;padding:3px 8px;border-radius:4px;flex-shrink:0;}
 
 /* NAV */
-.nav{display:flex;background:#0c0f12;border-bottom:1px solid rgba(255,255,255,0.06);overflow-x:auto;scrollbar-width:none;flex-shrink:0;}
+.nav{display:flex;background:#090e14;border-bottom:1px solid rgba(255,255,255,0.06);overflow-x:auto;scrollbar-width:none;flex-shrink:0;}
 .nav::-webkit-scrollbar{display:none;}
 .nav-btn{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray);background:none;border:none;padding:11px 14px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;flex-shrink:0;}
 .nav-btn.active{color:var(--teal);border-bottom-color:var(--teal);}
@@ -44,44 +44,44 @@ html,body{height:100%;background:#101418;font-family:'Barlow',sans-serif;color:w
 
 /* SHARED */
 .section-label{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
-.card{background:#161b21;border:1px solid rgba(255,255,255,0.06);border-radius:10px;}
+.card{background:#111820;border:1px solid rgba(255,255,255,0.06);border-radius:10px;}
 
 /* HOME */
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px;}
-.stat-card{background:#161b21;border:1px solid rgba(0,160,176,0.2);border-radius:10px;padding:12px 8px;text-align:center;}
+.stat-card{background:#111820;border:1px solid rgba(0,169,206,0.2);border-radius:10px;padding:12px 8px;text-align:center;}
 .stat-card .num{font-family:'Bebas Neue',sans-serif;font-size:34px;color:var(--teal);line-height:1;}
 .stat-card .lbl{font-size:10px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;margin-top:3px;}
 
-.next-game{background:#161b21;border:1px solid rgba(0,160,176,0.25);border-left:3px solid var(--teal);border-radius:10px;padding:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;}
+.next-game{background:#111820;border:1px solid rgba(0,169,206,0.25);border-left:3px solid var(--teal);border-radius:10px;padding:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;}
 .next-game .vs{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1px;}
 .next-game .meta{font-size:11px;color:var(--gray);margin-top:2px;}
-.date-badge{background:var(--teal);color:#101418;font-family:'Bebas Neue',sans-serif;font-size:16px;padding:6px 10px;border-radius:6px;text-align:center;line-height:1.3;letter-spacing:1px;}
+.date-badge{background:var(--teal);color:#101820;font-family:'Bebas Neue',sans-serif;font-size:16px;padding:6px 10px;border-radius:6px;text-align:center;line-height:1.3;letter-spacing:1px;}
 
-.donate-cta{background:linear-gradient(135deg,#007A88,#00A0B0);border-radius:10px;padding:14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;border:none;width:100%;color:white;text-align:left;margin-bottom:18px;}
+.donate-cta{background:linear-gradient(135deg,#0080A0,#00A9CE);border-radius:10px;padding:14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;border:none;width:100%;color:white;text-align:left;margin-bottom:18px;}
 .donate-cta h3{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;}
 .donate-cta p{font-size:11px;opacity:.85;margin-top:2px;}
 .arrow{font-size:24px;font-family:'Bebas Neue',sans-serif;}
 
-.pipeline-card{background:linear-gradient(135deg,#0f1e20,#0a1214);border:1px solid rgba(0,160,176,0.2);border-radius:10px;padding:14px;}
+.pipeline-card{background:linear-gradient(135deg,#0c1820,#081014);border:1px solid rgba(0,169,206,0.2);border-radius:10px;padding:14px;}
 .pipeline-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
 .pip-steps{display:flex;}
-.pip-step{flex:1;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;color:white;background:rgba(0,160,176,0.1);border:1px solid rgba(0,160,176,0.2);padding:7px 2px;}
-.pip-step:first-child{border-radius:5px 0 0 5px;background:var(--teal);color:#101418;}
+.pip-step{flex:1;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;color:white;background:rgba(0,169,206,0.1);border:1px solid rgba(0,169,206,0.2);padding:7px 2px;}
+.pip-step:first-child{border-radius:5px 0 0 5px;background:var(--teal);color:#101820;}
 .pip-step:last-child{border-radius:0 5px 5px 0;}
 .pip-step .age{font-size:15px;display:block;color:var(--teal);}
-.pip-step:first-child .age{color:#101418;}
+.pip-step:first-child .age{color:#101820;}
 
 /* ROSTER */
 .player-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
-.player-card{background:#161b21;border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px;display:flex;align-items:center;gap:10px;}
+.player-card{background:#111820;border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px;display:flex;align-items:center;gap:10px;}
 .jersey{width:40px;height:40px;border-radius:7px;background:var(--teal-glow);border:1px solid var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--teal);flex-shrink:0;}
 .player-info .name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.5px;}
 .player-info .pos{font-size:11px;color:var(--teal);letter-spacing:1px;margin-top:1px;}
-.add-btn{grid-column:1/-1;background:none;border:1px dashed rgba(0,160,176,0.3);border-radius:10px;color:var(--teal);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:1px;padding:12px;cursor:pointer;text-transform:uppercase;width:100%;}
+.add-btn{grid-column:1/-1;background:none;border:1px dashed rgba(0,169,206,0.3);border-radius:10px;color:var(--teal);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:1px;padding:12px;cursor:pointer;text-transform:uppercase;width:100%;}
 
 /* SCHEDULE */
 .schedule-list{display:flex;flex-direction:column;gap:9px;}
-.game-row{background:#161b21;border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px;}
+.game-row{background:#111820;border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px;}
 .game-row.win{border-left:3px solid #1D9E75;}
 .game-row.loss{border-left:3px solid #D85A30;}
 .game-row.upcoming{border-left:3px solid var(--teal);}
@@ -96,28 +96,28 @@ html,body{height:100%;background:#101418;font-family:'Barlow',sans-serif;color:w
 
 /* EVENTS */
 .events-list{display:flex;flex-direction:column;gap:9px;}
-.event-card{background:#161b21;border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start;}
+.event-card{background:#111820;border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start;}
 .event-dot{width:9px;height:9px;border-radius:50%;background:var(--teal);margin-top:4px;flex-shrink:0;}
 .e-title{font-weight:600;font-size:13px;}
 .e-meta{font-size:11px;color:var(--gray);margin-top:3px;line-height:1.4;}
 
 /* DONATE */
-.donate-header{background:linear-gradient(135deg,#0a1a1c,#0f2428);border:1px solid rgba(0,160,176,0.3);border-radius:12px;padding:18px;text-align:center;margin-bottom:18px;}
+.donate-header{background:linear-gradient(135deg,#081418,#0c1e24);border:1px solid rgba(0,169,206,0.3);border-radius:12px;padding:18px;text-align:center;margin-bottom:18px;}
 .donate-header h2{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;color:var(--teal);}
 .donate-header p{font-size:12px;color:var(--gray);margin-top:6px;line-height:1.6;}
 .amount-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px;}
-.amount-btn{background:#161b21;border:1px solid rgba(0,160,176,0.2);border-radius:8px;color:white;font-family:'Bebas Neue',sans-serif;font-size:20px;padding:12px 8px;cursor:pointer;letter-spacing:1px;width:100%;}
-.amount-btn.selected{background:var(--teal);color:#101418;border-color:var(--teal);}
+.amount-btn{background:#111820;border:1px solid rgba(0,169,206,0.2);border-radius:8px;color:white;font-family:'Bebas Neue',sans-serif;font-size:20px;padding:12px 8px;cursor:pointer;letter-spacing:1px;width:100%;}
+.amount-btn.selected{background:var(--teal);color:#101820;border-color:var(--teal);}
 .custom-row{display:flex;gap:10px;margin-bottom:14px;align-items:center;}
 .custom-row label{font-size:12px;color:var(--gray);white-space:nowrap;}
-.custom-row input{flex:1;background:#161b21;border:1px solid rgba(0,160,176,0.2);border-radius:8px;color:white;font-size:15px;padding:9px 11px;outline:none;font-family:'Barlow',sans-serif;}
+.custom-row input{flex:1;background:#111820;border:1px solid rgba(0,169,206,0.2);border-radius:8px;color:white;font-size:15px;padding:9px 11px;outline:none;font-family:'Barlow',sans-serif;}
 .custom-row input:focus{border-color:var(--teal);}
-.donate-submit{width:100%;background:var(--teal);border:none;border-radius:10px;color:#101418;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;padding:14px;cursor:pointer;}
+.donate-submit{width:100%;background:var(--teal);border:none;border-radius:10px;color:#101820;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;padding:14px;cursor:pointer;}
 .donate-note{text-align:center;font-size:11px;color:var(--gray);margin-top:10px;line-height:1.5;}
-.fund-breakdown{background:linear-gradient(135deg,#0f1e20,#0a1214);border:1px solid rgba(0,160,176,0.2);border-radius:10px;padding:14px;margin-top:16px;}
+.fund-breakdown{background:linear-gradient(135deg,#0c1820,#081014);border:1px solid rgba(0,169,206,0.2);border-radius:10px;padding:14px;margin-top:16px;}
 .fund-breakdown h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
 .fund-row{display:flex;justify-content:space-between;font-size:12px;color:var(--gray);padding:4px 0;}
-.fund-total{display:flex;justify-content:space-between;font-size:13px;font-weight:600;padding-top:8px;margin-top:4px;border-top:1px solid rgba(0,160,176,0.2);}
+.fund-total{display:flex;justify-content:space-between;font-size:13px;font-weight:600;padding-top:8px;margin-top:4px;border-top:1px solid rgba(0,169,206,0.2);}
 
 .ig-header{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);border-radius:12px;padding:16px;display:flex;align-items:center;gap:14px;margin-bottom:18px;}
 .ig-icon{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;}
@@ -125,6 +125,24 @@ html,body{height:100%;background:#101418;font-family:'Barlow',sans-serif;color:w
 .ig-sub{font-size:12px;opacity:0.85;margin-top:2px;}
 .ig-follow-btn{margin-left:auto;background:white;color:#833ab4;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:1px;padding:7px 12px;border-radius:20px;border:none;cursor:pointer;white-space:nowrap;flex-shrink:0;}
 .ig-feed-wrap{border-radius:10px;overflow:hidden;}
+
+.hamburger-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:36px;height:36px;background:rgba(0,169,206,0.1);border:1px solid rgba(0,169,206,0.3);border-radius:8px;cursor:pointer;flex-shrink:0;margin-left:8px;padding:0;}
+.hbar{display:block;width:16px;height:2px;background:#00A9CE;border-radius:2px;}
+.drawer-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.65);z-index:100;display:flex;justify-content:flex-end;}
+.drawer-overlay.hidden{display:none;}
+.drawer{width:220px;max-width:80vw;height:100%;background:#0e1620;border-left:1px solid rgba(0,169,206,0.2);display:flex;flex-direction:column;overflow-y:auto;}
+.drawer-header{display:flex;align-items:center;justify-content:space-between;padding:16px 16px 14px;border-bottom:1px solid rgba(0,169,206,0.15);}
+.drawer-title{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:3px;color:white;}
+.drawer-close{background:rgba(0,169,206,0.1);border:1px solid rgba(0,169,206,0.2);border-radius:6px;color:#00A9CE;font-size:14px;width:28px;height:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.drawer-logo{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid rgba(0,169,206,0.1);}
+.drawer-logo img{width:40px;height:40px;object-fit:contain;}
+.drawer-team{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:1px;color:white;line-height:1.1;}
+.drawer-sub{font-family:'Barlow Condensed',sans-serif;font-size:11px;color:#00A9CE;letter-spacing:2px;text-transform:uppercase;margin-top:2px;}
+.drawer-nav{display:flex;flex-direction:column;padding:8px 0;flex:1;}
+.drawer-item{display:flex;align-items:center;gap:12px;padding:13px 16px;background:none;border:none;border-left:3px solid transparent;color:#8C8279;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-align:left;width:100%;}
+.drawer-item.active{color:#00A9CE;border-left-color:#00A9CE;background:rgba(0,169,206,0.07);}
+.drawer-item:hover{color:white;}
+.di-icon{font-size:16px;width:20px;text-align:center;}
 </style>
 </head>
 <body>
@@ -140,17 +158,15 @@ html,body{height:100%;background:#101418;font-family:'Barlow',sans-serif;color:w
         <div class="sub">Youth Football &middot; 9U Division</div>
       </div>
       <div class="season-badge">2026</div>
+      <button class="hamburger-btn" onclick="toggleMenu()" aria-label="Menu">
+        <span class="hbar"></span>
+        <span class="hbar"></span>
+        <span class="hbar"></span>
+      </button>
     </div>
   </div>
 
-  <nav class="nav">
-    <button class="nav-btn active" onclick="show('home',this)">Home</button>
-    <button class="nav-btn" onclick="show('roster',this)">Roster</button>
-    <button class="nav-btn" onclick="show('schedule',this)">Schedule</button>
-    <button class="nav-btn" onclick="show('events',this)">Events</button>
-    <button class="nav-btn" onclick="show('social',this)">Social</button>
-    <button class="nav-btn" onclick="show('donate',this)">Donate</button>
-  </nav>
+
 
   <div class="scroll">
 
@@ -284,15 +300,63 @@ html,body{height:100%;background:#101418;font-family:'Barlow',sans-serif;color:w
         <div class="fund-total"><span>Season Goal</span><span style="color:var(--teal)">,000</span></div>
       </div>
     </div>
+  
+  <!-- DRAWER MENU -->
+  <div class="drawer-overlay hidden" id="drawerOverlay" onclick="closeMenuOutside(event)">
+    <div class="drawer" id="drawer">
+      <div class="drawer-header">
+        <div class="drawer-title">MENU</div>
+        <button class="drawer-close" onclick="toggleMenu()">&#x2715;</button>
+      </div>
+      <div class="drawer-logo">
+        <img src="logo.png" alt="Seckinger Jaguars" onerror="this.style.display='none'">
+        <div>
+          <div class="drawer-team">Seckinger Jaguars</div>
+          <div class="drawer-sub">9U Youth Football</div>
+        </div>
+      </div>
+      <nav class="drawer-nav">
+        <button class="drawer-item active" id="mi-home" onclick="showFromMenu('home')">
+          <span class="di-icon">&#8962;</span>Home
+        </button>
+        <button class="drawer-item" id="mi-roster" onclick="showFromMenu('roster')">
+          <span class="di-icon">&#128101;</span>Roster
+        </button>
+        <button class="drawer-item" id="mi-schedule" onclick="showFromMenu('schedule')">
+          <span class="di-icon">&#128197;</span>Schedule
+        </button>
+        <button class="drawer-item" id="mi-events" onclick="showFromMenu('events')">
+          <span class="di-icon">&#128205;</span>Events
+        </button>
+        <button class="drawer-item" id="mi-social" onclick="showFromMenu('social')">
+          <span class="di-icon">&#128247;</span>Social
+        </button>
+        <button class="drawer-item" id="mi-donate" onclick="showFromMenu('donate')">
+          <span class="di-icon">&#128176;</span>Donate
+        </button>
+      </nav>
+    </div>
   </div>
+</div>
 </div>
 <script>
 function show(id,btn){
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
-  if(btn)btn.classList.add('active');
   document.querySelector('.scroll').scrollTop=0;
+}
+function toggleMenu(){
+  document.getElementById('drawerOverlay').classList.toggle('hidden');
+}
+function closeMenuOutside(e){
+  if(e.target===document.getElementById('drawerOverlay')) toggleMenu();
+}
+function showFromMenu(id){
+  show(id);
+  document.querySelectorAll('.drawer-item').forEach(b=>b.classList.remove('active'));
+  const btn=document.getElementById('mi-'+id);
+  if(btn)btn.classList.add('active');
+  toggleMenu();
 }
 let sel=50;
 function selectAmt(btn,amt){
