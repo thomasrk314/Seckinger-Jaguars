@@ -143,25 +143,6 @@ html,body{height:100%;background:#101820;font-family:'Barlow',sans-serif;color:w
 .drawer-item.active{color:#00A9CE;border-left-color:#00A9CE;background:rgba(0,169,206,0.07);}
 .drawer-item:hover{color:white;}
 .di-icon{font-size:16px;width:20px;text-align:center;}
-
-.player-card{cursor:pointer;transition:border-color 0.2s;}
-.player-card:hover{border-color:var(--teal);}
-.spotlight-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.75);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;}
-.spotlight-overlay.hidden{display:none;}
-.spotlight-modal{background:#0e1620;border:1px solid rgba(0,169,206,0.3);border-radius:16px;width:100%;max-width:320px;overflow:hidden;animation:popIn 0.25s ease;}
-@keyframes popIn{from{transform:scale(0.85);opacity:0;}to{transform:scale(1);opacity:1;}}
-.spotlight-header{background:linear-gradient(135deg,#081418,#0c1e24);padding:24px 20px 20px;text-align:center;position:relative;border-bottom:1px solid rgba(0,169,206,0.15);}
-.spotlight-close{position:absolute;top:12px;right:12px;background:rgba(0,169,206,0.1);border:1px solid rgba(0,169,206,0.2);border-radius:6px;color:#00A9CE;font-size:14px;width:28px;height:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
-.spotlight-number{font-family:'Bebas Neue',sans-serif;font-size:72px;color:#00A9CE;line-height:1;letter-spacing:2px;}
-.spotlight-photo{width:90px;height:90px;border-radius:50%;border:3px solid #00A9CE;background:#161b21;margin:12px auto;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.spotlight-photo img{width:100%;height:100%;object-fit:cover;}
-.spotlight-photo-placeholder{font-family:'Bebas Neue',sans-serif;font-size:28px;color:#00A9CE;}
-.spotlight-name{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;color:white;margin-top:4px;}
-.spotlight-pos{display:inline-block;background:#00A9CE;color:#101820;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;padding:3px 10px;border-radius:4px;margin-top:6px;text-transform:uppercase;}
-.spotlight-body{padding:20px;}
-.spotlight-bio-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;color:#00A9CE;text-transform:uppercase;margin-bottom:8px;}
-.spotlight-bio{font-size:13px;color:#8C8279;line-height:1.6;}
-.spotlight-tag{display:inline-block;background:rgba(0,169,206,0.1);border:1px solid rgba(0,169,206,0.2);color:#00A9CE;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;padding:4px 8px;border-radius:4px;margin:4px 4px 0 0;}
 </style>
 </head>
 <body>
@@ -225,22 +206,22 @@ html,body{height:100%;background:#101820;font-family:'Barlow',sans-serif;color:w
     <div id="roster" class="panel">
       <div class="section-label" style="margin-bottom:12px;">2026 Roster</div>
       <div class="player-grid">
-        <div class="player-card" onclick="openSpotlight('1',document.querySelector('#card-1 .name').textContent,'QB','The field general of the Jaguars. Has a rocket arm and a cool head under pressure.','<span class=\"spotlight-tag\">Team Captain</span><span class=\"spotlight-tag\">Leader</span>')" id="card-1"><div class="jersey">1</div><div class="player-info"><div class="name">Player Name</div><div class="pos">QB</div></div></div>
-        <div class="player-card" onclick="openSpotlight('2',document.querySelector('#card-2 .name').textContent,'RB','Explosive speed that keeps defenses on their toes. Hard to bring down once he gets going.','<span class=\"spotlight-tag\">Speed Demon</span><span class=\"spotlight-tag\">Playmaker</span>')" id="card-2"><div class="jersey">2</div><div class="player-info"><div class="name">Player Name</div><div class="pos">RB</div></div></div>
-        <div class="player-card" onclick="openSpotlight('3',document.querySelector('#card-3 .name').textContent,'WR','Great hands and route running. Always finds a way to get open when it matters most.','<span class=\"spotlight-tag\">Sure Hands</span><span class=\"spotlight-tag\">Route Runner</span>')" id="card-3"><div class="jersey">3</div><div class="player-info"><div class="name">Player Name</div><div class="pos">WR</div></div></div>
-        <div class="player-card" onclick="openSpotlight('4',document.querySelector('#card-4 .name').textContent,'WR','A deep threat who stretches the defense. Never afraid of the big moment.','<span class=\"spotlight-tag\">Deep Threat</span><span class=\"spotlight-tag\">Big Play</span>')" id="card-4"><div class="jersey">4</div><div class="player-info"><div class="name">Player Name</div><div class="pos">WR</div></div></div>
-        <div class="player-card" onclick="openSpotlight('5',document.querySelector('#card-5 .name').textContent,'OL','The anchor of the offensive line. Keeps his teammates protected on every snap.','<span class=\"spotlight-tag\">Enforcer</span><span class=\"spotlight-tag\">Protector</span>')" id="card-5"><div class="jersey">5</div><div class="player-info"><div class="name">Player Name</div><div class="pos">OL</div></div></div>
-        <div class="player-card" onclick="openSpotlight('6',document.querySelector('#card-6 .name').textContent,'DL','Disruptive force on the defensive line. Creates chaos in the backfield every game.','<span class=\"spotlight-tag\">Disruptor</span><span class=\"spotlight-tag\">Powerhouse</span>')" id="card-6"><div class="jersey">6</div><div class="player-info"><div class="name">Player Name</div><div class="pos">DL</div></div></div>
-        <div class="player-card" onclick="openSpotlight('7',document.querySelector('#card-7 .name').textContent,'LB','Heart and soul of the defense. Reads plays before they happen and is always in the right spot.','<span class=\"spotlight-tag\">Play Reader</span><span class=\"spotlight-tag\">Heart of Defense</span>')" id="card-7"><div class="jersey">7</div><div class="player-info"><div class="name">Player Name</div><div class="pos">LB</div></div></div>
-        <div class="player-card" onclick="openSpotlight('8',document.querySelector('#card-8 .name').textContent,'CB','Lockdown corner who takes away half the field. Elite coverage skills.','<span class=\"spotlight-tag\">Lockdown</span><span class=\"spotlight-tag\">Elite Coverage</span>')" id="card-8"><div class="jersey">8</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
- 	<div class="player-card" onclick="openSpotlight('9',document.querySelector('#card-9 .name').textContent,'CB','Quick off the line and never gives receivers an easy catch. A true competitor.','<span class=\"spotlight-tag\">Quick Feet</span><span class=\"spotlight-tag\">Competitor</span>')" id="card-9"><div class="jersey">9</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
- 	<div class="player-card" onclick="openSpotlight('10',document.querySelector('#card-10 .name').textContent,'CB','Smart, physical corner who brings energy every play. A spark plug for the whole defense.','<span class=\"spotlight-tag\">Physical</span><span class=\"spotlight-tag\">Spark Plug</span>')" id="card-10"><div class="jersey">10</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
-        <div class="player-card" onclick="openSpotlight('11',document.querySelector('#card-11 .name').textContent,'OL','A wall on the offensive line. His teammates trust him to hold the line every single play.','<span class=\"spotlight-tag\">Wall</span><span class=\"spotlight-tag\">Reliable</span>')" id="card-11"><div class="jersey">11</div><div class="player-info"><div class="name">Player Name</div><div class="pos">OL</div></div></div>
-        <div class="player-card" onclick="openSpotlight('12',document.querySelector('#card-12 .name').textContent,'DL','Motor never stops running. Puts pressure on the QB and sets the tone for the defense.','<span class=\"spotlight-tag\">Motor</span><span class=\"spotlight-tag\">Pressure</span>')" id="card-12"><div class="jersey">12</div><div class="player-info"><div class="name">Player Name</div><div class="pos">DL</div></div></div>
-        <div class="player-card" onclick="openSpotlight('13',document.querySelector('#card-13 .name').textContent,'LB','Physical and fearless. Makes tackles look easy and brings the whole team up with his energy.','<span class=\"spotlight-tag\">Fearless</span><span class=\"spotlight-tag\">Physical</span>')" id="card-13"><div class="jersey">13</div><div class="player-info"><div class="name">Player Name</div><div class="pos">LB</div></div></div>
-        <div class="player-card" onclick="openSpotlight('14',document.querySelector('#card-14 .name').textContent,'CB','Instinctive corner who always seems to be in the right place at the right time.','<span class=\"spotlight-tag\">Instinctive</span><span class=\"spotlight-tag\">Smart</span>')" id="card-14"><div class="jersey">14</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
- 	<div class="player-card" onclick="openSpotlight('15',document.querySelector('#card-15 .name').textContent,'CB','Tough as nails and never backs down from a challenge. A future star in the making.','<span class=\"spotlight-tag\">Tough</span><span class=\"spotlight-tag\">Future Star</span>')" id="card-15"><div class="jersey">15</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
- 	<div class="player-card" onclick="openSpotlight('16',document.querySelector('#card-16 .name').textContent,'CB','Versatile and coachable. Gets better every single practice and game.','<span class=\"spotlight-tag\">Versatile</span><span class=\"spotlight-tag\">Coachable</span>')" id="card-16"><div class="jersey">16</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
+        <div class="player-card" onclick="openSpotlight(1)" id="card-1"><div class="jersey">1</div><div class="player-info"><div class="name">Player Name</div><div class="pos">QB</div></div></div>
+        <div class="player-card" onclick="openSpotlight(2)" id="card-2"><div class="jersey">2</div><div class="player-info"><div class="name">Player Name</div><div class="pos">RB</div></div></div>
+        <div class="player-card" onclick="openSpotlight(3)" id="card-3"><div class="jersey">3</div><div class="player-info"><div class="name">Player Name</div><div class="pos">WR</div></div></div>
+        <div class="player-card" onclick="openSpotlight(4)" id="card-4"><div class="jersey">4</div><div class="player-info"><div class="name">Player Name</div><div class="pos">WR</div></div></div>
+        <div class="player-card" onclick="openSpotlight(5)" id="card-5"><div class="jersey">5</div><div class="player-info"><div class="name">Player Name</div><div class="pos">OL</div></div></div>
+        <div class="player-card" onclick="openSpotlight(6)" id="card-6"><div class="jersey">6</div><div class="player-info"><div class="name">Player Name</div><div class="pos">DL</div></div></div>
+        <div class="player-card" onclick="openSpotlight(7)" id="card-7"><div class="jersey">7</div><div class="player-info"><div class="name">Player Name</div><div class="pos">LB</div></div></div>
+        <div class="player-card" onclick="openSpotlight(8)" id="card-8"><div class="jersey">8</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
+ 	<div class="player-card" onclick="openSpotlight(9)" id="card-9"><div class="jersey">9</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
+ 	<div class="player-card" onclick="openSpotlight(10)" id="card-10"><div class="jersey">10</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
+        <div class="player-card" onclick="openSpotlight(11)" id="card-11"><div class="jersey">11</div><div class="player-info"><div class="name">Player Name</div><div class="pos">OL</div></div></div>
+        <div class="player-card" onclick="openSpotlight(12)" id="card-12"><div class="jersey">12</div><div class="player-info"><div class="name">Player Name</div><div class="pos">DL</div></div></div>
+        <div class="player-card" onclick="openSpotlight(13)" id="card-13"><div class="jersey">13</div><div class="player-info"><div class="name">Player Name</div><div class="pos">LB</div></div></div>
+        <div class="player-card" onclick="openSpotlight(14)" id="card-14"><div class="jersey">14</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
+ 	<div class="player-card" onclick="openSpotlight(15)" id="card-15"><div class="jersey">15</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
+ 	<div class="player-card" onclick="openSpotlight(16)" id="card-16"><div class="jersey">16</div><div class="player-info"><div class="name">Player Name</div><div class="pos">CB</div></div></div>
     </div>
    </div>  
 
@@ -319,26 +300,6 @@ html,body{height:100%;background:#101820;font-family:'Barlow',sans-serif;color:w
       </div>
     </div>
   
-
-  <!-- PLAYER SPOTLIGHT -->
-  <div class="spotlight-overlay hidden" id="spotlightOverlay" onclick="closeSpotlight(event)">
-    <div class="spotlight-modal" id="spotlightModal">
-      <div class="spotlight-header">
-        <button class="spotlight-close" onclick="hideSpotlight()">&#x2715;</button>
-        <div class="spotlight-number" id="sp-number">1</div>
-        <div class="spotlight-photo">
-          <div class="spotlight-photo-placeholder" id="sp-initials">P</div>
-        </div>
-        <div class="spotlight-name" id="sp-name">Player Name</div>
-        <div class="spotlight-pos" id="sp-pos">QB</div>
-      </div>
-      <div class="spotlight-body">
-        <div class="spotlight-bio-label">Player Spotlight</div>
-        <div class="spotlight-bio" id="sp-bio"></div>
-        <div style="margin-top:12px;" id="sp-tags"></div>
-      </div>
-    </div>
-  </div>
   <!-- DRAWER MENU -->
   <div class="drawer-overlay hidden" id="drawerOverlay" onclick="closeMenuOutside(event)">
     <div class="drawer" id="drawer">
@@ -378,12 +339,36 @@ html,body{height:100%;background:#101820;font-family:'Barlow',sans-serif;color:w
 </div>
 </div>
 <script>
-function openSpotlight(num, name, pos, bio, tags){
+var PLAYERS = {
+  1: {pos:"QB",bio:"The field general of the Jaguars. Has a rocket arm and a cool head under pressure.",tags:["Team Captain","Leader"]},
+  2: {pos:"RB",bio:"Explosive speed that keeps defenses on their toes. Hard to bring down once he gets going.",tags:["Speed Demon","Playmaker"]},
+  3: {pos:"WR",bio:"Great hands and route running. Always finds a way to get open when it matters most.",tags:["Sure Hands","Route Runner"]},
+  4: {pos:"WR",bio:"A deep threat who stretches the defense. Never afraid of the big moment.",tags:["Deep Threat","Big Play"]},
+  5: {pos:"OL",bio:"The anchor of the offensive line. Keeps his teammates protected on every snap.",tags:["Enforcer","Protector"]},
+  6: {pos:"DL",bio:"Disruptive force on the defensive line. Creates chaos in the backfield every game.",tags:["Disruptor","Powerhouse"]},
+  7: {pos:"LB",bio:"Heart and soul of the defense. Reads plays before they happen and is always in the right spot.",tags:["Play Reader","Heart of Defense"]},
+  8: {pos:"CB",bio:"Lockdown corner who takes away half the field. Elite coverage skills.",tags:["Lockdown","Elite Coverage"]},
+  9: {pos:"CB",bio:"Quick off the line and never gives receivers an easy catch. A true competitor.",tags:["Quick Feet","Competitor"]},
+  10: {pos:"CB",bio:"Smart, physical corner who brings energy every play. A spark plug for the whole defense.",tags:["Physical","Spark Plug"]},
+  11: {pos:"OL",bio:"A wall on the offensive line. His teammates trust him to hold the line every single play.",tags:["Wall","Reliable"]},
+  12: {pos:"DL",bio:"Motor never stops running. Puts pressure on the QB and sets the tone for the defense.",tags:["Motor","Pressure"]},
+  13: {pos:"LB",bio:"Physical and fearless. Makes tackles look easy and brings the whole team up with his energy.",tags:["Fearless","Physical"]},
+  14: {pos:"CB",bio:"Instinctive corner who always seems to be in the right place at the right time.",tags:["Instinctive","Smart"]},
+  15: {pos:"CB",bio:"Tough as nails and never backs down from a challenge. A future star in the making.",tags:["Tough","Future Star"]},
+  16: {pos:"CB",bio:"Versatile and coachable. Gets better every single practice and game.",tags:["Versatile","Coachable"]},
+};
+
+function openSpotlight(num){
+  var p=PLAYERS[num];
+  if(!p) return;
+  var nameEl=document.querySelector('#card-'+num+' .name');
+  var name=nameEl?nameEl.textContent:'Player Name';
   document.getElementById('sp-number').textContent='#'+num;
   document.getElementById('sp-name').textContent=name;
-  document.getElementById('sp-pos').textContent=pos;
-  document.getElementById('sp-bio').textContent=bio;
-  document.getElementById('sp-tags').innerHTML=tags;
+  document.getElementById('sp-pos').textContent=p.pos;
+  document.getElementById('sp-bio').textContent=p.bio;
+  var tagsHtml=p.tags.map(function(t){return '<span class="spotlight-tag">'+t+'</span>';}).join('');
+  document.getElementById('sp-tags').innerHTML=tagsHtml;
   document.getElementById('sp-initials').textContent=name.charAt(0)||'#';
   document.getElementById('spotlightOverlay').classList.remove('hidden');
 }
