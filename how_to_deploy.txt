@@ -1,0 +1,41 @@
+===========================================
+SECKINGER JAGUARS APP - DEPLOYMENT GUIDE
+===========================================
+
+OPTION 1: NETLIFY (Easiest - Free, 2 minutes)
+----------------------------------------------
+1. Go to https://netlify.com and sign up free
+2. Drag and drop this entire folder onto the Netlify dashboard
+3. You get a link like: https://seckinger-jaguars.netlify.app
+4. Share that link with parents & players!
+
+TO ADD TO YOUR IPHONE HOME SCREEN:
+1. Open the link in Safari
+2. Tap the Share button (box with arrow)
+3. Scroll down and tap "Add to Home Screen"
+4. Tap "Add" — done! It'll appear as an app icon.
+
+TO ADD TO ANDROID HOME SCREEN:
+1. Open the link in Chrome
+2. Tap the 3-dot menu
+3. Tap "Add to Home Screen"
+4. Tap "Add" — done!
+
+OPTION 2: GITHUB PAGES (Also free)
+-----------------------------------
+1. Create a GitHub account at github.com
+2. Create a new repository called "seckinger-jaguars"
+3. Upload all files in this folder
+4. Go to Settings > Pages > Deploy from branch (main)
+5. Your site will be at: https://[yourusername].github.io/seckinger-jaguars
+
+===========================================
+NEXT STEPS TO CUSTOMIZE:
+===========================================
+- Update player names and numbers in index.html
+- Update your real game schedule and scores
+- Add your real events
+- Connect a payment link (PayPal.me, Venmo, Cash App) for donations
+
+Need help? Just ask Claude!
+===========================================
